@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width:100vw;
+    height:100vh;
+    overflow: hidden;
+    background: #a0a0a0;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav div{
+    display: flex;
+    padding: 0.3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    gap: 10em;
+}
+
+nav div a{
+    text-decoration: none;
+    color: black;
+    font-family: "Montserrat";
+    font-weight: 500;
+}
+
+
+.header{
+    height:30vh;
+    position: relative;
+    height: 30vh;
+    .group{
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        padding: 1em 2em;
+        align-items: center;
+        /* border: 2px solid black; */
+        height: 100%;
+    }
+}
+
+.group .h1{
+    margin-top: 0.2em;
+    font-size: 10vw;
+    text-transform: uppercase;
+    font-family: "Bubble Garden";
+    font-weight: bold;
+    color: #1a1a1a;
+    line-height: 1.25;
+
+}
+
+.hero{
+    position: relative;
+    height: 70vh;
+    width: calc(100vw - 4em);
+    margin: 0 auto;
+    border: 6px solid black;
+    border-radius: 10px;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.overlay{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    display: flex;
+
+    .bar{
+        width: 10vw;
+        height: 105vh;
+        background: #1a1a1a;
+    }
+}
+
+.counter{
+    position: absolute;
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 0.2em 0.4em;
+    font-size: 23vw;
+    font-family: "Bubble Garden";
+    color:#bcbcc4;
+}
+
+.hidden{
+    opacity: 0;
+}
