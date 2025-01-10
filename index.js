@@ -10,7 +10,7 @@ function startLoader(){
             currentValue = 100;
         }
 
-        counterElement.textContent = currentValue
+        counterElement.textContent = String(currentValue) + "%";
         let delay = Math.floor(Math.random() * 200) + 50;
         setTimeout(updateCounter,delay);
     }
